@@ -1,4 +1,4 @@
-const {stringLength, reverseString, Calculator} = require('./index');
+const {stringLength, reverseString, Calculator, capitalize} = require('./index');
 
 // Test for stringLength
 
@@ -227,5 +227,20 @@ describe('multiply two numbers', () => {
     // Assert
 
     expect(result).toEqual(expectedoutput);
+  })
+})
+
+// Test for Capitalize first character
+describe('capitalize first character of string', () => {
+  test('expected lugard to be Lugard', () => {
+    // Arrange
+    const string = 'lugard';
+    expectedoutput = 'Lugard';
+
+    // Act
+    const result = capitalize(string);
+
+    // Assert
+    expect(result).toEqual(expectedoutput)
   })
 })

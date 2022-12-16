@@ -44,4 +44,8 @@ multiply() {
 }
 }
 
-module.exports = {stringLength, reverseString, Calculator};
+const capitalize = str => {
+  return result = str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+module.exports = {stringLength, reverseString, Calculator, capitalize};
